@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Указывает на версию JavaScript (например, ES6)
+    "module": "commonjs", // Тип модуля (например, CommonJS для Node.js)
+    "strict": true, // Включает строгий режим
+    "esModuleInterop": true, // Позволяет импортировать CommonJS модули как ES6
+    "skipLibCheck": true, // Пропускать проверку типов в библиотечных файлах
+    "forceConsistentCasingInFileNames": true, // Требовать одинакового регистра в именах файлов
+    "outDir": "./dist", // Папка для компилированных файлов
+    "rootDir": "./src", // Папка исходных файлов
+    "resolveJsonModule": true, // Разрешает импорт JSON файлов как модулей
+    "allowJs": true, // Разрешает использовать JavaScript файлы
+    "paths": {
+      "*": ["./src/*"]
+    }
+  },
+  "include": [
+    "src/**/*" // Включает все файлы в папке src
+  ],
+  "exclude": [
+    "node_modules" // Исключает папку node_modules
+  ]
+}
