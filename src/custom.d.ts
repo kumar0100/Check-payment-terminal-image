@@ -12,3 +12,7 @@ declare module "*.jpg" {
   const value: string;
   export default value;
 }
+
+declare module "check-payment-terminal-image" {
+  export function verifyImage(image: Buffer): boolean;
+}
