@@ -1,5 +1,6 @@
-node_modules
-.vscode
-coverage
-*.DS_Store
-!jest.config.js
+/dist
+/node_modules
+
+.DS_Store
+.env
+*.js

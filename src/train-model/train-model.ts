@@ -85,7 +85,7 @@ const trainModel = async (): Promise<void> => {
     ]);
 
     await model.fit(trainX, trainY, { epochs: 12 });
-    await model.save("file://./src/train-model/my-model");
+    await model.save("file://./src/my-model");
   
     console.log('Model has trained and saved!');
   } catch (error) {
