@@ -12,7 +12,7 @@ const loadImage = (image: Buffer): Tensor => {
 export const verifyImage = async (image: Buffer): Promise<boolean> => {
   try {
     const model = await loadLayersModel(
-      "file://./src/my-model/model.json"
+      "file://./node_modules/check-payment-terminal-image/dist/verify-image/my-model/model.json"
     );
 
     const decodedImage = loadImage(image);
